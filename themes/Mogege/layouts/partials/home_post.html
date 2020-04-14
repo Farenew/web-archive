@@ -14,7 +14,7 @@
     {{ end }}
  
 </div>
-	{{ range (.Paginate .Pages).Pages }}
+	{{ range first 3 (.Paginate .Pages).Pages }}
 		<article class="post" itemscope itemscope="" itemtype="http://schema.org/Article">
 
 			<header class="post-header">
