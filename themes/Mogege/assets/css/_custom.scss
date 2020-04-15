@@ -1,0 +1,41 @@
+// ==============================
+// Custom style
+// ==============================
+// You can override the variables in _variables.scss to customize the style
+
+html {
+  font-family: "Microsoft Yahei", "Josefin Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", STHeiti,  "WenQuanYi Micro Hei", Arial, Verdana, sans-serif;
+}
+
+body {
+  font-size: 13pt;
+  font-weight: 400;
+  line-height: 2em;
+  background-color: $light-background-color;
+  color: $light-font-color;
+}
+
+a {
+  font-size: 15pt;
+}
+
+a.author {
+  font-size: 11pt;
+}
+
+a.hugo {
+  font-size: 11pt;
+}
+
+
+a.homepage {
+  font-size: 18pt;
+}
+
+h1.homepage {
+  font-size: 15pt;
+}
+
+h3 {
+  margin-bottom: 0.5em;
+}

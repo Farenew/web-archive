@@ -4,7 +4,14 @@
     {{ end }}
 
     <div class="container">
-        {{ if (and (not .IsHome) (.Site.Params.Back2Home | default true)) }}
+        <div class="navbar-header header-back2home-logo">
+            <span class="logo_mark" >>$</span>
+            <a href="{{ .Site.BaseURL }}">
+                <span class="logo_text" >cd /home/</span>
+                <span class="logo_cursor" ></span>
+            </a>
+        </div>
+        <!-- {{ if (and (not .IsHome) (.Site.Params.Back2Home | default true)) }}
             <div class="navbar-header header-back2home-logo">
                 <span class="logo_mark" >>$</span>
                 <a href="{{ .Site.BaseURL }}">
@@ -16,7 +23,7 @@
             <div class="navbar-header header-logo">
                 <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
             </div>
-        {{ end }}
+        {{ end }} -->
         <div class="navbar-right">
                 {{ $currentPage := . }}
                 <span class="menu">
@@ -24,7 +31,7 @@
                 <a class="menu-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
                 {{ end }}
                 <span class="divide"></span>
-                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a>
+                <a href="javascript:void(0);" class="theme-switch" style="font-size: large;"><i class="iconfont icon-dark-mode"></i></a>
                 </span>
         </div>
     </div>

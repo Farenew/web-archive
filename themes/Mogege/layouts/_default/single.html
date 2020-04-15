@@ -2,12 +2,20 @@
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
         <div class="post-meta">
+                <!--
                 Written by <a itemprop="name" href="{{.Site.BaseURL }}" rel="author">{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</a> with ♥
                 <span class="post-time">
                 on <time datetime={{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormatToUse | default "January 2, 2006") }}</time>
                 </span>
                 in
+                -->
                 {{ with .Params.categories }}
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
@@ -19,7 +27,10 @@
                         {{ end }}
                 </span>
                 {{- end }}
+                
+                <!--
                 <span class="post-word-count">{{ .WordCount }} words</span>
+                -->
         </div>
     </header>
 
@@ -47,6 +58,7 @@
         {{ $finalContent }}
     </div>
 
+    <!---
     <div class="post-copyright">
             {{ with .Site.Params.author }}
             <p class="copyright-item">
@@ -67,7 +79,7 @@
             </p>
             {{ end }}
     </div>
-
+    ---->
 
     <div class="post-tags">
         {{ with .Params.tags }}
