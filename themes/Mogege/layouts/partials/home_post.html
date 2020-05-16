@@ -3,8 +3,8 @@
 	<div class="intro">
     {{ with .Site.Params.avatar}}
     {{ $avatar := .}}
-    <div class="avatar">
-        <a href="/posts/"> <img src="{{ (printf "%s" $avatar)}}"> </a>
+    <div>
+        <a href="/posts/"> <img src="{{ (printf "%s" $avatar)}}" style="max-width:100%;height:auto;"> </a>
     </div>
     {{ end }}
     {{ with .Site.Params.subtitle}}

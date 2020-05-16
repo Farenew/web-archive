@@ -43,9 +43,20 @@
     {{ end }}
      <div class="container">
         <div class="navbar">
+            <!--
             <div class="navbar-header header-logo">
                     <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
             </div>
+            -->
+            <div class="navbar-header header-back2home-logo">
+            <span class="logo_mark" >>$</span>
+            <a href="{{ .Site.BaseURL }}">
+                <span class="logo_text" >cd /home/</span>
+                <span class="logo_cursor" ></span>
+            </a>
+            </div>
+
+
             <div class="navbar-right">
                 <div><a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a></div>
                 <div class="menu-toggle">

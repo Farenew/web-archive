@@ -138,10 +138,10 @@
           margin-left: auto;
           a {
             display: block;
-            line-height: 2.5em;
-            font-size: 2em;
+            line-height: 2em;
+            font-size: 1.5em;
             margin: auto;
-            width: min-content;
+            width: max-content;
             &.active .menu-active {
                 position: relative;
                 top: -1.25em;

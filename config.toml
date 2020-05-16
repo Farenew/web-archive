@@ -1,8 +1,8 @@
-baseURL = "https://example.com"
+baseURL = "https://archive.farenew.com/"
 title = "WebPages Archive" # 浏览器的标题
 languageCode = "zh-cn" # 语言
 hasCJKLanguage = true # 开启可以让「字数统计」统计汉字
-theme = "mogege" # 主题 (需要自己下载)
+theme = "Mogege" # 主题 (需要自己下载)
 
 paginate = 11 # 每页的文章数
 enableEmoji = true # 支持 Emoji
@@ -52,7 +52,7 @@ preserveTaxonomyNames = true
 [params]
     since = 2020
     author = "Farenew"                          # Author's name
-    avatar = "/1.png"           # Author's avatar
+    avatar = "/banner.jpg"           # Author's avatar
     # subtitle = "Just for Fun"                  # Subtitle
     home_mode = "post" # post or other
     enableGitalk = false # gitalk 评论系统
@@ -64,7 +64,7 @@ preserveTaxonomyNames = true
 
     beian = ""
     baiduAnalytics = ""
-    googleAnalytics = "" # Google 统计 id
+    googleAnalytics = "UA-113903439-4" # Google 统计 id
 
     license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
