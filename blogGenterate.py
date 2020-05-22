@@ -80,6 +80,7 @@ for key, value in staticDict.items():
                 # 创建文件并写入内容
                 with open(FileName, "w", encoding="UTF-8") as f:
                     f.write(frontMatter)
+                    f.write('\n')
                     # file content
                     content = "[" + File + "]" + "(/" + str(contentPath[2]) + "/" + link + ")\n"
 
