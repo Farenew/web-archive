@@ -19,15 +19,15 @@ preserveTaxonomyNames = true
   posts = "/:year/:filename/"
 
 [menu]
-  [[menu.main]]
-    name = "理工"
-    url = "/science/"
-    weight = 1
+  # [[menu.main]]
+  #   name = "理工"
+  #   url = "/science/"
+  #   weight = 1
 
-  [[menu.main]]
-    name = "社科"
-    url = "/social/"
-    weight = 2
+  # [[menu.main]]
+  #   name = "社科"
+  #   url = "/social/"
+  #   weight = 2
 
   [[menu.main]]
     name = "短新闻"
@@ -52,14 +52,14 @@ preserveTaxonomyNames = true
 [params]
     since = 2020
     author = "Farenew"                          # Author's name
-    avatar = "/banner.jpg"           # Author's avatar
-    # subtitle = "Just for Fun"                  # Subtitle
-    home_mode = "post" # post or other
+    avatar = "/1.png"           # Author's avatar
+    subtitle = "Farenew的网页存档"                  # Subtitle
+    home_mode = "other" # post or other
     enableGitalk = false # gitalk 评论系统
 
     google_verification = ""
 
-    description = "Mogeko 的个人博客" # (Meta) 描述
+    description = "Farenew 的存档" # (Meta) 描述
     keywords = "" # site keywords
 
     beian = ""
