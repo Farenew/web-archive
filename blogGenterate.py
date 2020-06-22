@@ -64,7 +64,7 @@ for key in staticDict:
     if key not in contentDict.keys():
         contentDict[key] = list()
         os.mkdir(curDir)
-
+        print("创建目录:", curDir)
     os.chdir(curDir)
 
     for item in staticDict[key]:
@@ -90,6 +90,8 @@ for key in staticDict:
                 content = "[" + title[0] + "]" + "(/" + str(key) + "/" + link + ")\n"
 
                 f.write(content)
+
+            print("在", key, "文件夹写入文件:", FileName)
 
     os.chdir(iniDir)
     
